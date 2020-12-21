@@ -80,13 +80,16 @@ p.subtt {
     font-family: Poppins;
     font-style: normal;
     font-weight: normal;
-    font-size: 2em;
-    line-height: 30px;
+    font-size: 1.6rem;
+    line-height: 3rem;
 /* or 167% */
     text-align: center;
     color: #FFFFFF;
     mix-blend-mode: normal;
     padding: 2% 25%;
+}
+.readmorebtn{
+    text-align: center;
 }
 p.sec3-tt,p.sec4-tt,p.sec5-tt,p.sec6-tt,p.sec7-tt,.sec10-tt {
     font-family: Poppins;
@@ -509,6 +512,26 @@ div.sponsors{
 .discordbox{
     margin: 10rem 0;
 }
+/* .for-color{
+    position: absolute;
+width: 390px;
+height: 390px;
+left: 768.7px;
+top: 353.13px;
+
+background: #8F3684;
+filter: blur(250px);
+} */
+/* .for-color1{
+    position: absolute;
+width: 390px;
+height: 390px;
+left: 193.46px;
+top: 248.65px;
+
+background: #184A61;
+filter: blur(250px);
+} */
 #discord{
     display: flex;
     align-items: center;
@@ -522,12 +545,21 @@ div.sponsors{
 div.demo-form{
     margin: 15rem auto 10rem auto;
     border: 2px solid #394045;
-    width: 50%;
+    width: 75%;
     border-radius: 2rem;
     background-color: rgba(196,196,196,0.1);
     align-items: center;
     padding: 7rem 4rem;
 }
+.radiobtn {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    height: 20px;
+    width: 20px;
+    /* background-color: #eee;
+    border-radius: 50%; */
+  }
 .items{
     padding: 5px 4px;
     box-sizing: border-box;
@@ -539,9 +571,14 @@ div.demo-form{
     align-items: center;
     border: 1px solid #394045;
     border-radius: 1rem;
+    width: 95%;
     background-color: rgba(196,196,196,0.1);
     font-size: 1.6rem;
 }
+/* nav#static-nav{
+
+} */
+
 
 div.items-radio{
     display: inline-block;
@@ -661,10 +698,10 @@ p.sur-tt {
 .navbar .nav-item {
     padding: 1.5rem;
 }
-input.wcon {
+/* input.wcon {
     padding: 1.5rem 15rem 1.5rem 1.5rem;
     font-size: 1.3em;
-}
+} */
 
 h1.entersurrogate {
     font-size: 4em;
@@ -739,10 +776,10 @@ p.sec3-boxtitt {
 p.sec3-rm {
     padding: 20px 0px 0px 30px;
 }
-input.wcon {
+/* input.wcon {
     padding: 1.5rem 10rem 1.5rem 1.5rem;
     font-size: 1.3em;
-}
+} */
 
 h1.entersurrogate {
     font-size: 4em;
@@ -835,10 +872,10 @@ li.nav-item a {
 .sec10-cont {
     width: 300px;
 }
-input.wcon {
+/* input.wcon {
     padding: 1.5rem 10rem 1.5rem 1.5rem;
     font-size: 1.3em;
-}
+} */
 
 h1.entersurrogate {
     font-size: 4em;
@@ -933,10 +970,10 @@ li.nav-item a {
 p.sur-tt {
     margin: 50px 0px;
 }
-input.wcon {
+/* input.wcon {
     padding: 1rem 10rem 1rem 1rem;
     font-size: 1.3em;
-}
+} */
 
 h1.entersurrogate {
     font-size: 4em;
@@ -1213,10 +1250,10 @@ h1.entersurrogate {
     font-size: 3em;
 }
 
-input.wcon {
+/* input.wcon {
     font-size: 1em;
     padding: 1rem 5rem 1rem 1rem;
-}
+} */
 p.sur-tt {
     margin: 50px 0px;
 }
