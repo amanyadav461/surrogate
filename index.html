@@ -342,16 +342,22 @@
 		$('.slider-sec3').slick({
 		  infinite: true,
 		  slidesToShow: 2,
-		  slidesToScroll: 1
+		  slidesToScroll: 1,
+		  arrows: true,
+		  prevArrow: `<i class="fa fa-chevron-right" aria-hidden="true"></i>`,
+		  nextArrow: `<i class="fa fa-chevron-left" aria-hidden="true"></i>`
 		});
 		$('.slider-sec5').slick({
 		  infinite: false,
 		  slidesToShow: 1.5,
-		  slidesToScroll: 1
+		  slidesToScroll: 1,
+		  arrows: true,
+		  prevArrow: `<i class="fa fa-chevron-right" aria-hidden="true"></i>`,
+		  nextArrow: `<i class="fa fa-chevron-left" aria-hidden="true"></i>`
 		});
 		$('.slider-sec7, .slider-sec10').slick({
 			autoplay: true,
-  			autoplaySpeed: 500000,
+  			autoplaySpeed: 5000,
   			dots: false,
   			prevArrow:false,
   			nextArrow: false
