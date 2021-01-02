@@ -2034,4 +2034,14 @@ section#team {
 p.exp-sec3 {
     top: 40%;
 }
+.sec10-cont {
+    width: 100%;
+}
+.sec10-slide.slick-slide {
+    margin: 0px 20px;
+}
+
+.sec10-imgcont img {
+    width: 100%;
+}
 }
