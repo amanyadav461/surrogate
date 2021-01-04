@@ -500,7 +500,7 @@
 		});
 		$('.slider-sec3, .slider-sec10').slick({
 		  infinite: false,
-		  slidesToShow: 1.5,
+		  slidesToShow: 1.7,
 		  slidesToScroll: 1,
 		  arrows: true,
 		  prevArrow: `<span class="arrowprv"><img src="image/arrow.png"></span>`,
@@ -529,14 +529,15 @@
 			  	}
 		  }]
 		});
-
 		if($(window).width() < 600){
 			$('.inner-slider-sec5').slick({
 				autoplay: false,
 		  		arrows: true,
 		  		slidesToShow:1,
 		  		slidesToScroll:1,
-		  		arrows:false,
+		  		arrows: true,
+			  	prevArrow: `<span class="arrowprv"><img src="image/arrow.png"></span>`,
+			  	nextArrow: `<span class="arrownxt"><img src="image/arrow.png"></span>`,
 			});
 
 			$("button.navbar-toggler").on('click', function(){
@@ -570,7 +571,7 @@
 						<div class="cross-sym"><i class="fa fa-times" aria-hidden="true"></i></div>
 						`);
 					currSlide.find("p.sec3-rm").remove();
-					currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");
+					/*currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");*/
 					if($(window).width() <600){currSlide.find('.sec3-rm').addClass("mob-sec3-rm-clicked");}
 					clk_sts = "clicked";
 				}
@@ -593,7 +594,7 @@
 					currSlide.find('.sec3-boxtitt').after(`<p class="sec3-boxstitt">Everybody loves to party/Live concerts seem fun right? Now with surrogate choose whoever you want to be and rock the concert with your friends, and guess what? You can do all this by just sitting at home without the hassle to go to an actual concert. Surrogate will revolutionalize the music industry by taking concerts virtual.</p><div class="cross-sym"><i class="fa fa-times" aria-hidden="true"></i></div>
 						`);
 					currSlide.find("p.sec3-rm").remove();
-					currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");
+					/*currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");*/
 					if($(window).width() <600){currSlide.find('.sec3-rm').addClass("mob-sec3-rm-clicked");}
 					clk_sts = "clicked";					
 				}
@@ -615,7 +616,7 @@
 					currSlide.find('.sec3-boxtitt').after(`<p class="sec3-boxstitt">The sports room is a space where you can interact with people & objects, while watching the live screening together. It is a place where fans from all around the globe can unite and create a vibe that will elevate your experience and keep everyone engaged at the same time.</p><div class="cross-sym"><i class="fa fa-times" aria-hidden="true"></i></div>
 						`);
 					currSlide.find("p.sec3-rm").remove();
-					currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");
+					/*currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");*/
 					if($(window).width() <600){currSlide.find('.sec3-rm').addClass("mob-sec3-rm-clicked");}
 					clk_sts = "clicked";					
 				}
@@ -638,7 +639,7 @@
 					currSlide.find('.sec3-boxtitt').after(`<p class="sec3-boxstitt">We feel VR is the perfect environment for teaching, upskilling and practicing! You can revisit anytime, and safely interact with heaviest of machines and unthinkable scenarios!</p><div class="cross-sym"><i class="fa fa-times" aria-hidden="true"></i></div>
 						`);
 					currSlide.find("p.sec3-rm").remove();
-					currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");
+					/*currSlide.find(".sec3-boxstitt").after("<p class='exp-sec3'>Explore ></p>");*/
 					if($(window).width() <600){currSlide.find('.sec3-rm').addClass("mob-sec3-rm-clicked");}
 					clk_sts = "clicked";					
 				}

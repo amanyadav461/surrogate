@@ -208,7 +208,7 @@ p.ft-boxst {
 }
 
 section.sec4 {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 section.sec7 button.slick-prev {
     display: none;
@@ -251,12 +251,12 @@ section.sec7 {
     margin-bottom: 50px;
 }
 section.sec6{
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 }
 section.sec9 {
     /* display: flex; */
     /* justify-content: space-between; */
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 .sec9-comp-clientsec {
     display: flex;
@@ -450,7 +450,7 @@ bold;
 }
 section.sec5 {
     /* overflow: hidden; */
-    padding: 0px 0px 100px 0px;
+    padding: 0px 0px 50px 0px;
 }
 
 .sec5 .slick-prev {
@@ -765,7 +765,7 @@ div.items-radio{
     width: 400px;
 }
 section.sec3 {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .logo img {
     position: absolute;
