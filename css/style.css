@@ -150,7 +150,7 @@ p.sec3-rm {
     position: relative;
     cursor: pointer;
     z-index: 2;
-    top: 75%;
+    top: 35%;
     font-size: 2em;
 }
 p.sec3-rm span {
@@ -183,7 +183,7 @@ i.fa.fa-star {font-size: 7em;position: absolute;left: 18px;top: 15px;right: 0;bo
 }
 .ft-box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 30%;
 }
 
@@ -197,8 +197,8 @@ p.ft-boxtitt {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
-    font-size: 3em;
-    line-height: 40px;
+    font-size: 2em;
+    line-height: 25px;
 }
 
 p.ft-boxst {
@@ -1101,17 +1101,17 @@ p.sur-tt {
 }
 .ft-boxicon {
     border-radius: 15px;
-    width: 80px;
-    height: 80px;
+    width: 55px;
+    height: 55px;
 }
 i.fa.fa-star {
-    font-size: 5em;
-    left: 15px;
-    top: 15px;
+    font-size: 4em;
+    left: 9px;
+    top: 8px;
 }
 p.ft-boxst {
-    font-size: 1.5em;
-    line-height: 30px;
+    font-size: 1.2em;
+    line-height: 20px;
 }
 .slider-sec5-box-cont {
     height: 400px;
