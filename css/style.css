@@ -450,7 +450,7 @@ bold;
 }
 section.sec5 {
     /* overflow: hidden; */
-    padding: 0px 0px 50px 0px;
+    padding: 0px 0px 120px 0px;
 }
 
 .sec5 .slick-prev {
@@ -565,15 +565,8 @@ section.sec5 {
     line-height: 8rem;
 } 
 /* section  */
-.entersurrogate{
-    font-size: 6em;
-    line-height: 8rem;
-    letter-spacing: 0.3rem;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-top: 60px;
-}
+.entersurrogate{font-family: Poppins;font-style: normal;font-weight: bold;font-size: 52px;line-height: 70px;
+/* or 135% */text-align: center;letter-spacing: -2px;color: white;}
 span.bluetxt{
     color: #0CB4E5;
 }
@@ -582,7 +575,7 @@ p.surropara{
     font-size: 2rem;
 }
 div.sponsors{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -688,8 +681,7 @@ div.items-radio{
     display: inline-block;
     margin: 0 1rem 0 2.5rem;
     font-size: 1.8rem;
-    color: #FFFFFF;
-    opacity: 0.3;
+    color: #646667;
 }
 .radio1{
     display: inline-block;
@@ -783,14 +775,14 @@ section.sec3 {
 .sec3 span.arrownxt.slick-arrow,.sec5 span.arrownxt.slick-arrow, .bg3_dv span.arrownxt.slick-arrow {
     /* font-size: 4em; */
     position: absolute;
-    top: -94px;
+    top: -110px;
     right: 25px;
 }
 
 .sec3 span.arrowprv.slick-arrow,.sec5 span.arrowprv.slick-arrow, .bg3_dv span.arrowprv.slick-arrow {
     /* font-size: 4em; */
     position: absolute;
-    top: -94px;
+    top: -110px;
     right: 75px;
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -953,6 +945,73 @@ a.nav-item2 {
     opacity: 0.3;
     font-size: 14px;
     line-height: 35px;
+}
+
+.rdcontainer {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.rdcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.rdcontainer:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.rdcontainer input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.rdcontainer input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.rdcontainer .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.rdcontainer input:checked ~ label {
+    color: white;
+}
+label.rdlbl {font-size: 16px;vertical-align: middle;}
+li.nav-item-social {
+    opacity: 0.3;
+}
+
+li.nav-item-social a {
+    font-size: 3rem;
 }
 /*Mobile Mobile Mobile Mobile Mobile Mobile Mobile Mobile*/
 @media only screen and (min-width: 1440px){
@@ -1967,7 +2026,7 @@ div#request {
 }
 
 h1.entersurrogate {
-    font-size: 1.5em;
+    font-size: 2.5em;
     line-height: 1.3em;
     padding-top: 50px;
 }
