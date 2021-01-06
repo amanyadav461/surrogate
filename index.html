@@ -496,9 +496,11 @@
 			if($(this).scrollTop() >= winHeight){
 				console.log("scroll cross");
 				$(".header").addClass("black-mob-nav");
+				$(".header").css("padding-top","0");
 			}else{
 				console.log("scroll inside");
 				$(".header").removeClass("black-mob-nav");
+				$(".header").css("padding-top","40px");
 			}
 		});
 		$('.slider-sec3, .slider-sec10').slick({
