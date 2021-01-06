@@ -490,19 +490,51 @@
 	<script type="text/javascript" src="slick/slick.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		let winHeight = $(window).height();
-		winHeight = winHeight*0.1;
-		$(window).scroll(function(){
-			if($(this).scrollTop() >= winHeight){
-				console.log("scroll cross");
-				$(".header").addClass("black-mob-nav");
-				$(".header").css("padding-top","0");
-			}else{
-				console.log("scroll inside");
-				$(".header").removeClass("black-mob-nav");
-				$(".header").css("padding-top","40px");
-			}
-		});
+		if($(window).width() < 600){
+			$('.inner-slider-sec5').slick({
+				autoplay: false,
+		  		arrows: true,
+		  		slidesToShow:1,
+		  		slidesToScroll:1,
+		  		arrows: true,
+			  	prevArrow: `<span class="arrowprv"><img src="image/arrow.png"></span>`,
+			  	nextArrow: `<span class="arrownxt"><img src="image/arrow.png"></span>`,
+			});
+			//Navigation Menu Mobile
+			$("button.navbar-toggler").on('click', function(){
+				$("nav.navbar").toggleClass("black-mob-nav");
+			});
+
+			let winHeight = $(window).height();
+			winHeight = winHeight*0.1;
+			$(window).scroll(function(){
+				if($(this).scrollTop() >= winHeight){
+					console.log("scroll cross");
+					$(".header").addClass("black-mob-nav");
+				}else{
+					console.log("scroll inside");
+					$(".header").removeClass("black-mob-nav");
+				}
+			});
+			//App Download
+			$("#microsoftapp,#oculusapp,#macapp").css("display","none");
+		}else{
+			let winHeight = $(window).height();
+			winHeight = winHeight*0.1;
+			$(window).scroll(function(){
+				if($(this).scrollTop() >= winHeight){
+					console.log("scroll cross");
+					$(".header").addClass("black-mob-nav");
+					$(".header").css("padding-top","0");
+				}else{
+					console.log("scroll inside");
+					$(".header").removeClass("black-mob-nav");
+					$(".header").css("padding-top","40px");
+				}
+			});
+		}
+
+
 		$('.slider-sec3, .slider-sec10').slick({
 		  infinite: false,
 		  slidesToShow: 1.7,
@@ -534,23 +566,6 @@
 			  	}
 		  }]
 		});
-		if($(window).width() < 600){
-			$('.inner-slider-sec5').slick({
-				autoplay: false,
-		  		arrows: true,
-		  		slidesToShow:1,
-		  		slidesToScroll:1,
-		  		arrows: true,
-			  	prevArrow: `<span class="arrowprv"><img src="image/arrow.png"></span>`,
-			  	nextArrow: `<span class="arrownxt"><img src="image/arrow.png"></span>`,
-			});
-
-			$("button.navbar-toggler").on('click', function(){
-				$("nav.navbar").toggleClass("black-mob-nav");
-			})
-			
-			$("#microsoftapp,#oculusapp,#macapp").css("display","none");
-		}
 	
 
 		var clk_sts = "";
@@ -695,20 +710,20 @@
 				sec5si = $(this).closest('.slider-sec5-box').attr("data-sec5SI");
 				if(sec5si == 1 && clicksts==""){
 					$('#readyspacecontt').css("display","block");
-					$(".sec5-boxrm1").text("Read Less >");
+					$(".sec5-boxrm1").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
 					clicksts = "clicked";
 				}else if(sec5si ==1 && clicksts == "clicked"){
 					$('#readyspacecontt').css("display","none");
-					$(".sec5-boxrm1").text("Read More..");
+					$(".sec5-boxrm1").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
 					clicksts = "";
 				}
 				else if(sec5si == 2 && clicksts == ""){
 					$('#whitelabelcontt').css("display","block");
-					$(".sec5-boxrm2").text("Read Less >");
+					$(".sec5-boxrm2").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
 					clicksts = "clicked";
 				}else if(sec5si == 2 && clicksts == "clicked"){
 					$('#whitelabelcontt').css("display","none");
-					$(".sec5-boxrm2").text("Read More..");
+					$(".sec5-boxrm2").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
 					clicksts = "";
 				}
 			}

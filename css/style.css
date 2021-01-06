@@ -1838,7 +1838,7 @@ span.navbar-toggler-icon {
 }
 
 p.sur-tt {
-    padding: 90px 0px 0px 0px;
+    padding: 75px 0px 0px 0px;
     font-size: 3em;
     line-height: 1.2em;
     margin-bottom: 50px;
@@ -1859,7 +1859,7 @@ section#features {
     /* margin-top: 30px; */
 }
 p.sec3-boxtitt {
-    font-size: 4em;
+    font-size: 3em;
     line-height: 1.2em;
     padding: 0;
     top: 20px;
@@ -1869,7 +1869,7 @@ p.sec3-boxtitt {
 }
 
 .sec3-box-img img {
-    width: 250px;
+    width: 200px;
     margin: auto;
 }
 
@@ -1878,10 +1878,11 @@ p.sec3-boxtitt {
 }
 
 div#jbp {
-    padding: 5rem 2rem;
+    padding: 0rem 2rem;
 }
 .slider-sec3-box-cont {
     margin: 0px;
+    height: 300px;
 }
 
 p.sec3-rm {
@@ -1920,6 +1921,7 @@ i.fa.fa-star {
 p.ft-boxtitt {
     font-size: 2em;
     line-height: 25px;
+    margin-bottom: 5px;
 }
 .slider-sec5-box.sec5-pt2 {
     position: relative;
@@ -1955,17 +1957,19 @@ footer.main-footer {
 }
 
 li.nav-item-social {
-    font-size: 4em;
+    font-size: 4em !important;
 }
 
 div#request {
     padding: 20px 0px;
-    margin: 5rem auto;
+    margin: 0rem auto;
+    width: 100%;
 }
 
 h1.entersurrogate {
     font-size: 1.5em;
     line-height: 1.3em;
+    padding-top: 50px;
 }
 
 .container1 {
@@ -1978,6 +1982,7 @@ h1.entersurrogate {
 .box1-conatiner {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 .sec9-comp-clientsec {
     flex-direction: column;
@@ -2051,9 +2056,11 @@ button.sc8btt {
 
 .sec5-boxrm {
     top: 90%;
+    font-size: 1.5em;
 }
 .slider-sec3-box-cont .sec3-rm {
     top: 80%;
+    font-size: 1.5em;
 }
 p.sec3-tt, p.sec4-tt, p.sec5-tt, p.sec6-tt, p.sec7-tt, .sec10-tt {
     font-size: 2.5em;
@@ -2061,14 +2068,14 @@ p.sec3-tt, p.sec4-tt, p.sec5-tt, p.sec6-tt, p.sec7-tt, .sec10-tt {
     padding-bottom: 20px;
 }
 
-.sec3 span.arrowprv.slick-arrow, .sec5 span.arrowprv.slick-arrow, .bg3_dv span.arrowprv.slick-arrow {top: -70px;right: 50px;}
+.sec3 span.arrowprv.slick-arrow, .sec5 span.arrowprv.slick-arrow, .bg3_dv span.arrowprv.slick-arrow {top: -60px;right: 50px;}
 
 span.arrowprv.slick-arrow img {
     width: 12px;
 }
 
 .sec3 span.arrownxt.slick-arrow, .sec5 span.arrownxt.slick-arrow, .bg3_dv span.arrownxt.slick-arrow {
-    top: -70px;
+    top: -60px;
     right: 15px;
 }
 
@@ -2089,8 +2096,9 @@ section.sec4 {
     left: 0;
     right: 0;
     text-align: center;
-    font-size: 7em;
-    line-height: 7rem;
+    font-size: 5em;
+    line-height: 5rem;
+    top: 15px;
 }
 div#navbarSupportedContent {
     margin-top: 20px;
@@ -2129,10 +2137,11 @@ section#downloads {
 }
 
 p.sec10-txt {
-    font-size: 1em;
+    font-size: 0.8em;
+    line-height: 25px;
 }
 a.sec10-block.slick-slide {
-    margin: 0px 20px;
+    padding: 0px 20px;
 }
 
 .sec10-imgcont img {
@@ -2140,7 +2149,7 @@ a.sec10-block.slick-slide {
 }
 
 .sec10-imgcont {
-    width: 83vw;
+    width: 78vw;
 }
 .bg1_dv{
     box-shadow: 0px 0px 10em 5em #13171e inset;
@@ -2152,6 +2161,42 @@ a.sec10-block.slick-slide {
 
 .logo img {
     top: 0px;
+}
+p.sec3-rm span {
+    top: 23px;
+}
+
+p.sec3-boxstitt {top: 35%;line-height: 20px;padding: 0 10px;font-size: 1.1em;text-align: center;width: 100%;}
+
+.slider-sec5-box-cont {
+    height: 400px;
+}
+.inner-slider-sec5 {
+    height: 400px;
+}
+
+section#oursolutions {
+    padding: 0;
+}
+
+section.sec7 {
+    padding: 0px 0px 60px 0px;
+}
+
+p.sc9-c-ov {
+    font-size: 1.5em;
+    line-height: 25px;
+}
+
+.sec10-cont {
+    width: 280px;
+}
+
+p.sec10-author {
+    font-size: 0.8em;
+}
+p.sc9-cn {
+    font-size: 1.5em;
 }
 }
 
