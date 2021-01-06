@@ -2080,6 +2080,7 @@ p.sc8-p {
 }
 ul.nav-items {
     margin-top: 2rem;
+    text-align: left;
 }
 button#discord a {
     font-size: 1.5em;
