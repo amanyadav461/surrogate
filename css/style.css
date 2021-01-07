@@ -983,7 +983,7 @@ a.nav-item2 {
 }
 
 .rdcontainer input:checked ~ .checkmark {
-  background-color: #2196F3;
+  background-color: #11c6ff;
 }
 
 .checkmark:after {
@@ -997,10 +997,10 @@ a.nav-item2 {
 }
 
 .rdcontainer .checkmark:after {
-    top: 9px;
-    left: 9px;
-    width: 8px;
-    height: 8px;
+    top: 8px;
+    left: 8px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background: white;
 }
