@@ -736,7 +736,8 @@ div.items-radio{
     margin-bottom: 5rem;
 }
 .smlbox2{
-    display: inline-block;
+    display: block;
+    width: 100%;
 }
 .dwn-social{
     margin-top: 4rem;
@@ -1012,7 +1013,9 @@ li.nav-item-social {
 
 li.nav-item-social a {
     font-size: 3rem;
+    margin: 0px 1rem;
 }
+.smlbox2 .nav-items {text-align: right;}
 /*Mobile Mobile Mobile Mobile Mobile Mobile Mobile Mobile*/
 @media only screen and (min-width: 1440px){
 body{
@@ -1129,8 +1132,8 @@ button#discord a {
 
 .box1-conatiner {
     display: flex;
-    justify-content: space-between;
-    width: 30%;
+    justify-content: space-around;
+    width: 48%;
 }
 
 .box1 .nav-itmes li {
@@ -2016,7 +2019,7 @@ footer.main-footer {
 }
 
 li.nav-item-social {
-    font-size: 4em !important;
+    font-size: 2em !important;
 }
 
 div#request {
@@ -2081,6 +2084,8 @@ p.sc8-p {
 ul.nav-items {
     margin-top: 2rem;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 button#discord a {
     font-size: 1.5em;
@@ -2216,7 +2221,7 @@ a.sec10-block.slick-slide {
 }
 .logo {
     width: 100px;
-    height: 25px;
+    height: 35px;
 }
 
 .logo img {
@@ -2257,6 +2262,24 @@ p.sec10-author {
 }
 p.sc9-cn {
     font-size: 1.5em;
+}
+.mob-bx1 {
+    width: 48%;
+}
+.smlbox .nav-items {
+    text-align: right;
+    margin: 0;
+}
+.smlbox {
+    margin-top: 2rem;
+}
+.smlbox2 .nav-items {
+    margin: 0;
+}
+
+.smlbox2 .nav-items .dwn-social {
+    margin: 1rem;
+    text-align: center;
 }
 }
 
