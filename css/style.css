@@ -1153,6 +1153,7 @@ li.nav-item-social a {
     bottom: -125px;
     animation-delay: 31s;
 }
+
 /*Mobile Mobile Mobile Mobile Mobile Mobile Mobile Mobile*/
 @media only screen and (min-width: 1440px){
 body{
@@ -2444,6 +2445,10 @@ div#readyspacecontt {
 }
 .background {
     height: 80%;
+}
+button.navbar-toggler {
+    outline: none;
+    box-shadow: none;
 }
 }
 
