@@ -89,7 +89,7 @@
 						style="background: linear-gradient(180deg, #F56443 0%, #E9C29A 100%);">
 						<p class="sec3-boxtitt">Live <br> Concerts</p>
 						<p class="sec3-rm">Read more &nbsp;&nbsp; <span><i class="fa fa-angle-right" aria-hidden="true"></i></span></p>
-						<div class="sec3-box-img">
+						<div class="sec3-box-img tabletpic">
 							<img src="image/tablet.png">
 						</div>
 					</div>
@@ -160,7 +160,7 @@
 							<div class="sec5-boxtxt">
 								<div class="sec5-boxtitt">Ready<br>Spaces</div>
 								<div class="sec5-boxstxt" id="readyspacecontt">The platform already hosts multiple rooms that can be used for various type of events, and based on the requirements we can easily change branding elements with few taps on the keyboard. </div>
-								<div class="sec5-boxrm sec5-boxrm1">Read More &nbsp;&nbsp; <span><i class="fa fa-angle-right"
+								<div class="sec5-boxrm sec5-boxrm1">Enquire Now  &nbsp;&nbsp; <span><i class="fa fa-angle-right"
 											aria-hidden="true"></i></span></div>
 							</div><img src="image/os1.png">
 						</div>
@@ -171,7 +171,7 @@
 							<div class="sec5-boxtxt">
 								<div class="sec5-boxtitt">White<br>Label</div>
 								<div class="sec5-boxstxt" id="whitelabelcontt">Want a custom made world from scratch? Or even a whole custom app for just your brand, we work with you to create it all. </div>
-								<div class="sec5-boxrm sec5-boxrm2">Read More &nbsp;&nbsp; <span><i class="fa fa-angle-right"
+								<div class="sec5-boxrm sec5-boxrm2">Learn More &nbsp;&nbsp; <span><i class="fa fa-angle-right"
 											aria-hidden="true"></i></span></div>
 							</div><img src="image/os1.png">
 						</div>
@@ -507,7 +507,7 @@
 			});
 
 			let winHeight = $(window).height();
-			winHeight = winHeight*0.1;
+			winHeight = winHeight*0.01;
 			$(window).scroll(function(){
 				if($(this).scrollTop() >= winHeight){
 					console.log("scroll cross");
@@ -670,62 +670,108 @@
 			}
 			console.log(currSlide.attr('data-slideIndex'));
 		});
-		var clicksts = "";
+		var clicksts_pt1 = "clicked";
+		var clicksts_pt2 = "";
+		var clicksts_pt2_mob ="";
+		var clicksts_pt1_mob = "";
 		$('.sec5-boxrm').on("click", function(){
 			if($(window).width () > 600) {
 				sec5si = $(this).closest('.slider-sec5-box').attr("data-sec5SI");
-				if(sec5si == 1 && clicksts==""){
-					$(".sec5-boxrm2").css("display","none");
+				sec5pt2 = $(".slider-sec5-box.sec5-pt2").attr("data-sec5SI");
+				sec5pt1 = $(".slider-sec5-box.sec5-pt1").attr("data-sec5SI");
+				console.log(sec5pt1+" "+sec5pt2);
+				if(sec5si == 1 && clicksts_pt1==""){
+					if(sec5pt2 == 2 && clicksts_pt2 == "clicked"){
+						$(".sec5-boxrm1").css("display","block");
+						$('#whitelabelcontt').css("display","none");
+						console.log("2 clicked");
+						$(".slider-sec5-box.sec5-pt2").closest('.slider-sec5-box').css("width","45%");
+						$(".slider-sec5-box.sec5-pt2").closest('.slider-sec5-box').prev().css("left","0px");
+						$(".sec5-boxrm.sec5-boxrm2").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
+						clicksts_pt2 = "";
+					}
+					$(".sec5-boxrm2").css("display","block");
 					$('#readyspacecontt').css("display","block");
 					$(this).closest('.slider-sec5-box').css("width","65%");
 					$(this).closest('.slider-sec5-box').next().css("right","-250px");
 					$(".sec5-boxrm.sec5-boxrm1").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "clicked";
-
-				}else if(sec5si ==1 && clicksts == "clicked"){
+					clicksts_pt1 = "clicked";
+					console.log("pt 1 open");
+				}else if(sec5si ==1 && clicksts_pt1 == "clicked"){
+					if(sec5pt2 == 2 && clicksts_pt2 == "clicked"){
+						$(".sec5-boxrm1").css("display","block");
+						$('#whitelabelcontt').css("display","none");
+						console.log("2 clicked");
+						$(".slider-sec5-box.sec5-pt2").closest('.slider-sec5-box').css("width","45%");
+						$(".slider-sec5-box.sec5-pt2").closest('.slider-sec5-box').prev().css("left","0px");
+						$(".sec5-boxrm.sec5-boxrm2").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
+						clicksts = "";
+					}
 					$(".sec5-boxrm2").css("display","block");
 					$('#readyspacecontt').css("display","none");
 					console.log("1 clicked");
 					$(this).closest('.slider-sec5-box').css("width","45%");
 					$(this).closest('.slider-sec5-box').next().css("right","0px");
 					$(".sec5-boxrm.sec5-boxrm1").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "";
+					clicksts_pt1 = "";
+					console.log("pt 1 close");
 				}
-				else if(sec5si == 2 && clicksts == ""){
-					$(".sec5-boxrm1").css("display","none");
+				else if(sec5si == 2 && clicksts_pt2 == ""){
+					if(sec5pt1 ==1 && clicksts_pt1 == "clicked"){
+						$(".sec5-boxrm2").css("display","block");
+						$('#readyspacecontt').css("display","none");
+						console.log("1 clicked");
+						$(".slider-sec5-box.sec5-pt1").closest('.slider-sec5-box').css("width","45%");
+						$(".slider-sec5-box.sec5-pt1").closest('.slider-sec5-box').next().css("right","0px");
+						$(".sec5-boxrm.sec5-boxrm1").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
+						clicksts_pt1 = "";
+					}
+					$(".sec5-boxrm1").css("display","block");
 					$('#whitelabelcontt').css("display","block");
 					$(this).closest('.slider-sec5-box').css("width","65%");
 					$(this).closest('.slider-sec5-box').prev().css("left","-250px");
-					$(".sec5-boxrm.sec5-boxrm1").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "clicked";
-				}else if(sec5si == 2 && clicksts == "clicked"){
+					$(".sec5-boxrm.sec5-boxrm2").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
+					clicksts_pt2 = "clicked";
+					console.log("pt 2 open");
+				}else if(sec5si == 2 && clicksts_pt2 == "clicked"){
+					if(sec5pt1 ==1 && clicksts_pt1 == "clicked"){
+						$(".sec5-boxrm2").css("display","block");
+						$('#readyspacecontt').css("display","none");
+						console.log("1 clicked");
+						$(".slider-sec5-box.sec5-pt1").closest('.slider-sec5-box').css("width","45%");
+						$(".slider-sec5-box.sec5-pt1").closest('.slider-sec5-box').next().css("right","0px");
+						$(".sec5-boxrm.sec5-boxrm1").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
+						clicksts_pt1 = "";
+					}					
 					$(".sec5-boxrm1").css("display","block");
 					$('#whitelabelcontt').css("display","none");
 					console.log("2 clicked");
 					$(this).closest('.slider-sec5-box').css("width","45%");
 					$(this).closest('.slider-sec5-box').prev().css("left","0px");
-					$(".sec5-boxrm.sec5-boxrm1").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "";
+					$(".sec5-boxrm.sec5-boxrm2").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
+					clicksts_pt2 = "";
+					console.log("pt 2 close");
 				}
 			}else{
+				console.log(clicksts_pt1+" "+clicksts_pt2);
 				sec5si = $(this).closest('.slider-sec5-box').attr("data-sec5SI");
-				if(sec5si == 1 && clicksts==""){
+				if(sec5si == 1 && clicksts_pt1_mob==""){
 					$('#readyspacecontt').css("display","block");
 					$(".sec5-boxrm1").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "clicked";
-				}else if(sec5si ==1 && clicksts == "clicked"){
+					clicksts_pt1_mob = "clicked";
+				}else if(sec5si ==1 && clicksts_pt1_mob == "clicked"){
 					$('#readyspacecontt').css("display","none");
 					$(".sec5-boxrm1").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "";
+					clicksts_pt1_mob = "";
 				}
-				else if(sec5si == 2 && clicksts == ""){
+				else if(sec5si == 2 && clicksts_pt2_mob == ""){
 					$('#whitelabelcontt').css("display","block");
 					$(".sec5-boxrm2").html(`Read Less&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "clicked";
-				}else if(sec5si == 2 && clicksts == "clicked"){
+					clicksts_pt2_mob = "clicked";
+				}else if(sec5si == 2 && clicksts_pt2_mob == "clicked"){
 					$('#whitelabelcontt').css("display","none");
 					$(".sec5-boxrm2").html(`Read More&nbsp&nbsp<span><i class='fa fa-angle-right' aria-hidden='true'></i></span>`);
-					clicksts = "";
+					clicksts_pt2_mob = "";
 				}
 			}
 		});
