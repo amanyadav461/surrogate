@@ -1154,6 +1154,28 @@ li.nav-item-social a {
     animation-delay: 31s;
 }
 
+@keyframes tp-dwn-anim {
+    0% { opacity: 0; transform: translateY(-20%);}
+    100%{opacity: 1; transform: translateY(0%);}
+}
+.tp-dwn-anim-cls{
+ animation: tp-dwn-anim 3s;   
+}
+
+@keyframes r-side-side {
+    from {transform: translateX(120%);}
+    to {transform: translateX(0%);}
+}
+.r-side-cls{
+    animation: r-side-side 2s;
+}
+@keyframes l-side-side {
+    from {transform: translateX(-120%);}
+    to {transform: translateX(0%);}
+}
+.l-side-cls{
+    animation: l-side-side 2s;
+}
 /*Mobile Mobile Mobile Mobile Mobile Mobile Mobile Mobile*/
 @media only screen and (min-width: 1440px){
 body{
@@ -2449,6 +2471,10 @@ div#readyspacecontt {
 button.navbar-toggler {
     outline: none;
     box-shadow: none;
+}
+@keyframes tp-dwn-anim {
+    0% { opacity: 0; transform: translateY(-5%);}
+    100%{opacity: 1; transform: translateY(0%);}
 }
 }
 
