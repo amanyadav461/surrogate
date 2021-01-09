@@ -70,6 +70,8 @@ h1,h2,h3{
     color: #FFFFFF;
     padding: 0px 100px;
     padding-bottom: 60px;
+    box-shadow: 0px 0px 20px 10px #13171e;
+    position: relative;
 }
 
 .bg3_dv {
@@ -1060,6 +1062,7 @@ li.nav-item-social a {
     left: 0;
     background: #3E1E68;
     overflow: hidden;
+    box-shadow: 0px 0px 10em 5em #13171e inset;
 }
 
 .background span {
@@ -2175,7 +2178,7 @@ p.subtt {
     padding: 0px;
     line-height: 1.5em;
     font-size: 1.2em;
-    margin-top: 20px;
+    padding: 20px 0px;
 }
 
 .bg2_dv {
@@ -2571,7 +2574,6 @@ div#readyspacecontt {
     height: auto;
 }
 .background {
-    height: 80%;
 }
 button.navbar-toggler {
     outline: none;
