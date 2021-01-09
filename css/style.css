@@ -1081,6 +1081,7 @@ li.nav-item-social a {
     height: 20px;
     background: rgba(255, 255, 255, 0.2);
     animation: animate 32s linear infinite;
+    animation-timing-function: linear 1000ms;
 }
 
 .background li:nth-child(0) {
@@ -1159,7 +1160,7 @@ li.nav-item-social a {
     100%{opacity: 1; transform: translateY(0%);}
 }
 .tp-dwn-anim-cls{
- animation: tp-dwn-anim 3s;   
+ animation: tp-dwn-anim 1s ease;
 }
 
 @keyframes r-side-side {
@@ -1167,14 +1168,16 @@ li.nav-item-social a {
     to {transform: translateX(0%);}
 }
 .r-side-cls{
-    animation: r-side-side 2s;
+    animation: r-side-side 1s ease;
+    animation-fill-mode: forwards;
 }
 @keyframes l-side-side {
     from {transform: translateX(-120%);}
     to {transform: translateX(0%);}
 }
 .l-side-cls{
-    animation: l-side-side 2s;
+    animation: l-side-side 1s ease;
+    animation-fill-mode: forwards;
 }
 /*Mobile Mobile Mobile Mobile Mobile Mobile Mobile Mobile*/
 @media only screen and (min-width: 1440px){
